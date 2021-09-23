@@ -54,11 +54,11 @@ var Item = /** @class */ (function () {
         }
     };
     Item.prototype.calcularTotal = function () {
-        console.log("O produto " + this.produto + " de pre\u00E7o " + this.preco + ", \n        de quantia comprada de " + this.quantidade + " teve o desconto de " + this.calcularDesconto() + "\n         e o valor total foi de " + (this.preco - this.calcularDesconto()));
+        console.log("O produto " + this.produto + " de pre\u00E7o " + this.preco + ", \n        de quantia comprada de " + this.quantidade + " teve o desconto de " + this.calcularDesconto() + "\n         e o valor total foi de cada produto foi " + (this.preco - this.calcularDesconto()) + ", o Valor total de todos os produtos seria de: " + (this.preco - this.calcularDesconto()) * this.quantidade);
     };
     return Item;
 }());
-var item = new Item('Notebook', 2000, 51);
+var item = new Item('Notebook', 1000, 10);
 item.calcularTotal();
 /*
 try {

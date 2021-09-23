@@ -57,12 +57,12 @@ class Item{
     calcularTotal(){
         console.log(`O produto ${this.produto} de preço ${this.preco}, 
         de quantia comprada de ${this.quantidade} teve o desconto de ${this.calcularDesconto()}
-         e o valor total foi de ${this.preco - this.calcularDesconto()}`)
+         e o valor total foi de cada produto foi ${(this.preco - this.calcularDesconto())}, o Valor total de todos os produtos seria de: ${(this.preco - this.calcularDesconto())*this.quantidade}`)
     }
 
 }
 
-const item = new Item('Notebook',2000,51)
+const item = new Item('Notebook',1000,10)
 
 item.calcularTotal()
 
